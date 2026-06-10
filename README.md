@@ -1,5 +1,10 @@
 # About Me:
-- I’m currently working on iOS development at Dubizzle Labs.<br> - I’m looking to collaborate on decentralized platforms or innovative iOS/Swift applications.<br> - I’m looking for help with scaling distributed architectures and web3 integrations.<br> - I’m currently learning advanced Swift performance optimization and core iOS frameworks.<br> - Ask me about Hive (my distributed compute resource sharing app), iOS architecture, or mobile development.<br> - Fun fact I can solve a Rubik's cube in 40 seconds on a good day.
+- I’m currently working on iOS development at Dubizzle Labs.<br>
+- I’m looking to collaborate on decentralized platforms or innovative iOS/Swift applications.<br>
+- I’m looking for help with scaling distributed architectures and web3 integrations.<br>
+- I’m currently learning advanced Swift performance optimization and core iOS frameworks.<br>
+- Ask me about Hive (my distributed compute resource sharing app), iOS architecture, or mobile development.<br>
+- Fun fact I can solve a Rubik's cube in 40 seconds on a good day.
 
 
 ## 🌐 Socials:
