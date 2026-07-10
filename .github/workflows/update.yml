@@ -2,12 +2,16 @@ name: Update Profile Stats SVGs
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Triggers automatically every night at midnight
-  workflow_dispatch: # Allows you to manually click a button to run it immediately
+    - cron: '0 0 * * *' 
+  workflow_dispatch: 
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    # Add these two lines right here to grant write access:
+    permissions:
+      contents: write
+
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v4
