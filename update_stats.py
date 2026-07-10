@@ -2,11 +2,9 @@ import os
 import urllib.request
 import json
 
-# double-check that this is exactly your username lowercase
 USERNAME = "ewjinx" 
 
 def fetch_github_stats():
-    # Use the built-in GitHub Action token to avoid API rate limits
     token = os.environ.get("GITHUB_TOKEN")
     
     def make_request(url):
@@ -40,13 +38,15 @@ def update_svgs(stats):
         with open(template_name, "r", encoding="utf-8") as file:
             content = file.read()
         
-        updated_content = content.format(**stats)
+        # FIXED: Using explicit .replace() calls so Python completely ignores your CSS styles
+        content = content.replace("{public_repos}", stats["public_repos"])
+        content = content.replace("{followers}", stats["followers"])
+        content = content.replace("{stars}", stats["stars"])
         
         with open(output_name, "w", encoding="utf-8") as file:
-            file.write(updated_content)
+            file.write(content)
         print(f"Successfully generated {output_name}")
 
 if __name__ == "__main__":
-    # Removed the blind try/except block so GitHub can report real script errors
     stats = fetch_github_stats()
     update_svgs(stats)
