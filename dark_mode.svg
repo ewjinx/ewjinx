@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,monospace" width="1150px" height="530px" font-size="16px">
+<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,monospace" width="985px" height="530px" font-size="16px">
 <style>
 @font-face {
   src: local('Consolas'), local('Consolas Bold');
@@ -15,51 +15,48 @@
 .cc {fill: #616e7f;}
 text, tspan {white-space: pre;}
 </style>
-<rect width="1150px" height="530px" fill="#161b22" rx="15"/>
+<rect width="985px" height="530px" fill="#161b22" rx="15"/>
 
-<!-- 44-Character Wide Portrait -->
+<!-- 35-Character Wide Portrait (Perfect XML Spacing) -->
 <text x="15" y="30" fill="#c9d1d9" class="ascii">
-<tspan x="15" y="30">....................^^::...................</tspan>
-<tspan x="15" y="50">..........:^!77?????YJ7~~777!~^:............</tspan>
-<tspan x="15" y="70">.......:!7J?7!!~~~~~~!!~~!!!7????7~:........</tspan>
-<tspan x="15" y="90">......7Y?!~~~~~~~~~~~~~~~~~~~~~~~7?J?^......</tspan>
-<tspan x="15" y="110">....:JJ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~7Y7:....</tspan>
-<tspan x="15" y="130">...:YJ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~75^...</tspan>
-<tspan x="15" y="150">...YJ~~~~~~~~!77777!~~~~~~~~~~~~~!7777!75:..</tspan>
-<tspan x="15" y="170">..JJ~~~~~~~?YJ7~^^~YY?J7!~~~~~7??7!~~!?J5J..</tspan>
-<tspan x="15" y="190">.7Y~~~~~~!GY^.~?JJY777!~Y?~~?J!^:^^^...^PB:.</tspan>
-<tspan x="15" y="210">.57~~~~~~PY..?JJ5##557!.:JYPJ:.7YGP?!7:.~G^.</tspan>
-<tspan x="15" y="230">:P!~~~~~?B^.~B#BP&amp;#5!^?J..7P:.Y#PGJJG&amp;~..5^.</tspan>
-<tspan x="15" y="250">:P!~~~~~JP..7#&amp;#B&amp;BBB&amp;P..7? !&amp;&amp;&amp;&amp;&amp;#&amp;&amp;~.:P^.</tspan>
-<tspan x="15" y="270">.57~~~~~!5^.:Y#&amp;#B#B#BJ:.~BP.^P#&amp;&amp;&amp;&amp;B7:^YY..</tspan>
-<tspan x="15" y="290">.!5~~~~~~7Y7^:~JPP5J7^:~?Y7JJ^:!??7~^^^7P:..</tspan>
-<tspan x="15" y="310">..?Y?!~~~~~7!^^^^^^~7?J?7~~~!?J7!^^^^^~5!...</tspan>
-<tspan x="15" y="330">...:!?J?!~~~~^^^^^^~!!~~~~~~~~~!!~^^^^?!....</tspan>
-<tspan x="15" y="350">......:~7???~^^^^^^~~~~~~~~~~~~~~~~^^::.....</tspan>
-<tspan x="15" y="370">.........:^!~^^^^^^~!~~~~!!!!77?J7^:........</tspan>
-<tspan x="15" y="390">...............::::!???????777!~:...........</tspan>
+<tspan x="15" y="30">...........:::::!^::::.............</tspan>
+<tspan x="15" y="50">.......:~7777777J?~~7777~^:........</tspan>
+<tspan x="15" y="70">.....~??7!~~~~~~~~~~~~~!!7?7!:.....</tspan>
+<tspan x="15" y="90">....7J!~~~~~~~~~~~~~~~~~~~~~7J~....</tspan>
+<tspan x="15" y="110">...?J~~~~~~~~~~~~~~~~~~~~~~~~~??:..</tspan>
+<tspan x="15" y="130">..7J~~~~~~!77777~~~~~~~~~~!777!??..</tspan>
+<tspan x="15" y="150">.!Y~~~~~?Y?!~~~JJJ?7~~~!??~^^^!JP~.</tspan>
+<tspan x="15" y="170">:5!~~~~?P^.!J5GJJ7^?J!J7:~??~:.:G?.</tspan>
+<tspan x="15" y="190">~Y~~~~!G~.YG5G&amp;P!~!.!G7.?PPJ?G!.77.</tspan>
+<tspan x="15" y="210">~Y~~~~7P.:G&amp;#B#GPGG:.J:!&amp;####&amp;? !?.</tspan>
+<tspan x="15" y="230">^5~~~~~Y:.?B#####P~.7B^~G&amp;&amp;#5^^5~.</tspan>
+<tspan x="15" y="250">.??~~~~!J!:~?YY?!^!??7J!^77!~^^JJ..</tspan>
+<tspan x="15" y="270">..!J7!~~~!~^^^^~7?7!~~~7?7~^^^7J:..</tspan>
+<tspan x="15" y="290">...:~7?7!~^^^^^~~~~~~~~~~~~^^^~:...</tspan>
+<tspan x="15" y="310">......:^!7^^^^^~~~~~~~!!!77^::.....</tspan>
+<tspan x="15" y="330">...........:::^!????7777!~:........</tspan>
 </text>
 
-<!-- FIXED: Shifted left to x="475" to pull long fields back onto the canvas -->
-<text x="475" y="30" fill="#c9d1d9">
-<tspan x="475" y="30">ahsan@rana</tspan> -———————————————————————————————————————————-—-
-<tspan x="475" y="50" class="cc">. </tspan><tspan class="key">OS</tspan>:<tspan class="cc"> ........................ </tspan><tspan class="value">Windows 11, macOS</tspan>
-<tspan x="475" y="70" class="cc">. </tspan><tspan class="key">Uptime</tspan>:<tspan class="cc"> . </tspan><tspan class="value">23 years, 5 months, 26 days</tspan>
-<tspan x="475" y="90" class="cc">. </tspan><tspan class="key">Host</tspan>:<tspan class="cc"> ............................. </tspan><tspan class="value">dubizzle Labs Platform</tspan>
-<tspan x="475" y="110" class="cc">. </tspan><tspan class="key">IDE</tspan>:<tspan class="cc"> ........................ </tspan><tspan class="value">Xcode (Latest), VS Code (Latest)</tspan>
-<tspan x="475" y="130" class="cc">. </tspan>
-<tspan x="475" y="150" class="cc">. </tspan><tspan class="key">Languages</tspan>.<tspan class="key">Programming</tspan>:<tspan class="cc"> ..... </tspan><tspan class="value">C++, Python, Swift</tspan>
-<tspan x="475" y="170" class="cc">. </tspan><tspan class="key">Languages</tspan>.<tspan class="key">Computer</tspan>:<tspan class="cc"> ......... </tspan><tspan class="value">HTML, CSS, JSON, Markdown, YAML</tspan>
-<tspan x="475" y="190" class="cc">. </tspan><tspan class="key">Languages</tspan>.<tspan class="key">Real</tspan>:<tspan class="cc"> ......................... </tspan><tspan class="value">English, Urdu</tspan>
-<tspan x="475" y="230" class="cc">. </tspan><tspan class="key">Hobbies</tspan>.<tspan class="key">Software</tspan>:<tspan class="cc"> .... </tspan><tspan class="value">Video Games</tspan>
-<tspan x="475" y="250" class="cc">. </tspan><tspan class="key">Hobbies</tspan>.<tspan class="key">Hardware</tspan>:<tspan class="cc"> ............. </tspan><tspan class="value">Table Tennis, Football</tspan>
-<tspan x="475" y="290">- Contact</tspan> -——————————————————————————————————————————————-—-
-<tspan x="475" y="315" class="cc">. </tspan><tspan class="key">Email</tspan>.<tspan class="key">Personal</tspan>:<tspan class="cc"> ..................... </tspan><tspan class="value">ahsanrana3x@gmail.com</tspan>
-<tspan x="475" y="335" class="cc">. </tspan><tspan class="key">Email</tspan>.<tspan class="key">Work</tspan>:<tspan class="cc"> ..................... </tspan><tspan class="value">ahsan.rana@dubizzlelabs.com</tspan>
-<tspan x="475" y="355" class="cc">. </tspan><tspan class="key">LinkedIn</tspan>:<tspan class="cc"> .................................... </tspan><tspan class="value">ahsan-rana-8b481a251</tspan>
-<tspan x="475" y="375" class="cc">. </tspan><tspan class="key">Discord</tspan>:<tspan class="cc"> ..................................... </tspan><tspan class="value">saanp</tspan>
-<tspan x="475" y="415">- GitHub Stats</tspan> -—————————————————————————————————————————-—-
-<tspan x="475" y="440" class="cc">. </tspan><tspan class="key">Repos</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">15</tspan> | <tspan class="key">Stars</tspan>:<tspan class="cc"> ......... </tspan><tspan class="value">3</tspan>
-<tspan x="475" y="465" class="cc">. </tspan><tspan class="key">Followers</tspan>:<tspan class="cc"> .... </tspan><tspan class="value">1</tspan>
+<!-- Info Panel Column -->
+<text x="415" y="30" fill="#c9d1d9">
+<tspan x="415" y="30">ahsan@rana</tspan> -——————————————————————————————————————
+<tspan x="415" y="50" class="cc">. </tspan><tspan class="key">OS</tspan>:<tspan class="cc"> ................................. </tspan><tspan class="value">Windows 11, macOS</tspan>
+<tspan x="415" y="70" class="cc">. </tspan><tspan class="key">Uptime</tspan>:<tspan class="cc"> . </tspan><tspan class="value">23 years, 5 months, 26 days</tspan>
+<tspan x="415" y="90" class="cc">. </tspan><tspan class="key">Host</tspan>:<tspan class="cc"> .......................... </tspan><tspan class="value">dubizzle Labs Platform</tspan>
+<tspan x="415" y="110" class="cc">. </tspan><tspan class="key">IDE</tspan>:<tspan class="cc"> ................. </tspan><tspan class="value">Xcode (Latest), VS Code (Latest)</tspan>
+<tspan x="415" y="130" class="cc">. </tspan>
+<tspan x="415" y="150" class="cc">. </tspan><tspan class="key">Languages</tspan>.<tspan class="key">Programming</tspan>:<tspan class="cc"> ............. </tspan><tspan class="value">C++, Python, Swift</tspan>
+<tspan x="415" y="170" class="cc">. </tspan><tspan class="key">Languages</tspan>.<tspan class="key">Computer</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">HTML, CSS, JSON, Markdown, YAML</tspan>
+<tspan x="415" y="190" class="cc">. </tspan><tspan class="key">Languages</tspan>.<tspan class="key">Real</tspan>:<tspan class="cc"> ......................... </tspan><tspan class="value">English, Urdu</tspan>
+<tspan x="415" y="210" class="cc">. </tspan><tspan class="key">Hobbies</tspan>.<tspan class="key">Software</tspan>:<tspan class="cc"> ......................... </tspan><tspan class="value">Video Games</tspan>
+<tspan x="415" y="230" class="cc">. </tspan><tspan class="key">Hobbies</tspan>.<tspan class="key">Hardware</tspan>:<tspan class="cc"> .............. </tspan><tspan class="value">Table Tennis, Football</tspan>
+<tspan x="415" y="270">- Contact</tspan> -——————————————————————————————————————————
+<tspan x="415" y="315" class="cc">. </tspan><tspan class="key">Email</tspan>.<tspan class="key">Personal</tspan>:<tspan class="cc"> ................. </tspan><tspan class="value">ahsanrana3x@gmail.com</tspan>
+<tspan x="415" y="335" class="cc">. </tspan><tspan class="key">Email</tspan>.<tspan class="key">Work</tspan>:<tspan class="cc"> ............... </tspan><tspan class="value">ahsan.rana@dubizzlelabs.com</tspan>
+<tspan x="415" y="355" class="cc">. </tspan><tspan class="key">LinkedIn</tspan>:<tspan class="cc"> ........................ </tspan><tspan class="value">ahsan-rana-8b481a251</tspan>
+<tspan x="415" y="375" class="cc">. </tspan><tspan class="key">Discord</tspan>:<tspan class="cc"> ........................................ </tspan><tspan class="value">saanp</tspan>
+<tspan x="415" y="415">- GitHub Stats</tspan> -——————————————————————————————————
+<tspan x="415" y="440" class="cc">. </tspan><tspan class="key">Repos</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">15</tspan> | <tspan class="key">Stars</tspan>:<tspan class="cc"> ......... </tspan><tspan class="value">3</tspan>
+<tspan x="415" y="465" class="cc">. </tspan><tspan class="key">Followers</tspan>:<tspan class="cc"> .... </tspan><tspan class="value">1</tspan>
 </text>
 </svg>
