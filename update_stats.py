@@ -266,37 +266,37 @@ def svg_overwrite(filename, age_data, commit_data, star_data, repo_data, contrib
     tree = etree.parse(filename)
     root = tree.getroot()
     
-    # You can change the 'container_width' to adjust how far right the text aligns
-    # For your 985px wide layout, 80-85 is usually the sweet spot for the text wall
-    container_width = 80 
+    # Pre-calibrated padding limits to match your specific custom label lengths
+    justify_format(root, 'age_data', age_data, 46)
+    justify_format(root, 'commit_data', commit_data, 22)
+    justify_format(root, 'star_data', star_data, 14)
+    justify_format(root, 'repo_data', repo_data, 6)
+    justify_format(root, 'contrib_data', contrib_data)
+    justify_format(root, 'follower_data', follower_data, 10)
     
-    justify_format(root, 'age_data', age_data, container_width)
-    justify_format(root, 'commit_data', commit_data, container_width)
-    justify_format(root, 'star_data', star_data, container_width)
-    justify_format(root, 'repo_data', repo_data, container_width)
-    justify_format(root, 'contrib_data', contrib_data, container_width)
-    justify_format(root, 'follower_data', follower_data, container_width)
-    justify_format(root, 'loc_data', loc_data[2], container_width)
-    justify_format(root, 'loc_add', loc_data[0], 0) # Stats inside parens don't need padding
-    justify_format(root, 'loc_del', loc_data[1], 0)
+    # "Lines of Code on GitHub" is a long label, so it gets a smaller pad limit (16)
+    justify_format(root, 'loc_data', loc_data[2], 16)
+    justify_format(root, 'loc_add', loc_data[0])
+    justify_format(root, 'loc_del', loc_data[1], 7)
     
     tree.write(filename, encoding='utf-8', xml_declaration=True)
 
-def justify_format(root, element_id, new_text, container_width):
+
+def justify_format(root, element_id, new_text, length=0):
     if isinstance(new_text, int):
         new_text = f"{'{:,}'.format(new_text)}"
     new_text = str(new_text)
     find_and_replace(root, element_id, new_text)
     
-    # DYNAMIC CALCULATION:
-    # 1. We find the element's current X position to know how much space is left.
-    element = root.find(f".//*[@id='{element_id}']")
-    if element is not None and container_width > 0:
-        current_x = int(element.get('x', 400)) # Default to 400 if x is missing
-        # Calculate how many dots fit in the remaining space
-        dots_needed = max(0, container_width - len(new_text) - (current_x // 10))
-        dot_string = '.' * dots_needed
-        find_and_replace(root, f"{element_id}_dots", dot_string)
+    # Safe, strict dot calculation based on length minus the dynamic text size
+    just_len = max(0, length - len(new_text))
+    if just_len <= 2:
+        dot_map = {0: '', 1: ' ', 2: '. '}
+        dot_string = dot_map.get(just_len, '')
+    else:
+        dot_string = '.' * just_len
+        
+    find_and_replace(root, f"{element_id}_dots", dot_string)
 
 
 def find_and_replace(root, element_id, new_text):
