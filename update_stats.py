@@ -266,16 +266,20 @@ def svg_overwrite(filename, age_data, commit_data, star_data, repo_data, contrib
     tree = etree.parse(filename)
     root = tree.getroot()
     
-    # FIXED: Calibrated padding thresholds to match your custom text formats perfectly
+    # We pass the custom strings directly. 
+    # The script will now calculate the gap needed to fill the line.
     justify_format(root, 'age_data', age_data, 46)
     justify_format(root, 'commit_data', commit_data, 22)
     justify_format(root, 'star_data', star_data, 14)
     justify_format(root, 'repo_data', repo_data, 6)
     justify_format(root, 'contrib_data', contrib_data)
     justify_format(root, 'follower_data', follower_data, 10)
-    justify_format(root, 'loc_data', loc_data[2], 26)
+    
+    # Lines of Code justification (adjust the last number if it still spills)
+    justify_format(root, 'loc_data', loc_data[2], 20)
     justify_format(root, 'loc_add', loc_data[0])
     justify_format(root, 'loc_del', loc_data[1], 7)
+    
     tree.write(filename, encoding='utf-8', xml_declaration=True)
 
 
