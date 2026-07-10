@@ -266,16 +266,14 @@ def svg_overwrite(filename, age_data, commit_data, star_data, repo_data, contrib
     tree = etree.parse(filename)
     root = tree.getroot()
     
-    # Pre-calibrated padding limits to match your specific custom label lengths
-    justify_format(root, 'age_data', age_data, 46)
+    # Andrew's exact padding limits
+    justify_format(root, 'age_data', age_data, 44)
     justify_format(root, 'commit_data', commit_data, 22)
     justify_format(root, 'star_data', star_data, 14)
     justify_format(root, 'repo_data', repo_data, 6)
     justify_format(root, 'contrib_data', contrib_data)
     justify_format(root, 'follower_data', follower_data, 10)
-    
-    # "Lines of Code on GitHub" is a long label, so it gets a smaller pad limit (16)
-    justify_format(root, 'loc_data', loc_data[2], 16)
+    justify_format(root, 'loc_data', loc_data[2], 9)
     justify_format(root, 'loc_add', loc_data[0])
     justify_format(root, 'loc_del', loc_data[1], 7)
     
@@ -288,13 +286,13 @@ def justify_format(root, element_id, new_text, length=0):
     new_text = str(new_text)
     find_and_replace(root, element_id, new_text)
     
-    # Safe, strict dot calculation based on length minus the dynamic text size
+    # Andrew's exact dot-generation math, including the bounding spaces
     just_len = max(0, length - len(new_text))
     if just_len <= 2:
         dot_map = {0: '', 1: ' ', 2: '. '}
-        dot_string = dot_map.get(just_len, '')
+        dot_string = dot_map[just_len]
     else:
-        dot_string = '.' * just_len
+        dot_string = ' ' + ('.' * just_len) + ' '
         
     find_and_replace(root, f"{element_id}_dots", dot_string)
 
