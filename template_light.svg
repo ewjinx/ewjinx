@@ -17,7 +17,7 @@ text, tspan {white-space: pre;}
 </style>
 <rect width="985px" height="530px" fill="#f6f8fa" rx="15"/>
 
-<!-- 35-Character Wide Portrait (Strictly XML-Escaped) -->
+<!-- 35-Character Wide Portrait (Perfect XML Spacing) -->
 <text x="15" y="30" fill="#24292f" class="ascii">
 <tspan x="15" y="30">...........:::::!^::::.............</tspan>
 <tspan x="15" y="50">.......:~7777777J?~~7777~^:........</tspan>
@@ -31,7 +31,7 @@ text, tspan {white-space: pre;}
 <tspan x="15" y="210">~Y~~~~7P.:G&amp;#B#GPGG:.J:!&amp;####&amp;? !?.</tspan>
 <tspan x="15" y="230">^5~~~~~Y:.?B#####P~.7B^~G&amp;&amp;#5^^5~.</tspan>
 <tspan x="15" y="250">.??~~~~!J!:~?YY?!^!??7J!^77!~^^JJ..</tspan>
-<tspan x="15" y="270"> Regel..!J7!~~~!~^^^^~7?7!~~~7?7~^^^7J:..</tspan>
+<tspan x="15" y="270">..!J7!~~~!~^^^^~7?7!~~~7?7~^^^7J:..</tspan>
 <tspan x="15" y="290">...:~7?7!~^^^^^~~~~~~~~~~~~^^^~:...</tspan>
 <tspan x="15" y="310">......:^!7^^^^^~~~~~~~!!!77^::.....</tspan>
 <tspan x="15" y="330">...........:::^!????7777!~:........</tspan>
@@ -47,10 +47,9 @@ text, tspan {white-space: pre;}
 <tspan x="415" y="130" class="cc">. </tspan>
 <tspan x="415" y="150" class="cc">. </tspan><tspan class="key">Languages</tspan>.<tspan class="key">Programming</tspan>:<tspan class="cc"> ............. </tspan><tspan class="value">C++, Python, Swift</tspan>
 <tspan x="415" y="170" class="cc">. </tspan><tspan class="key">Languages</tspan>.<tspan class="key">Computer</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">HTML, CSS, JSON, Markdown, YAML</tspan>
-<tspan x="415" y="180" class="cc">. </tspan><tspan class="key">Languages</tspan>.<tspan class="key">Real</tspan>:<tspan class="cc"> ......................... </tspan><tspan class="value">English, Urdu</tspan>
-<tspan x="415" y="210" class="cc">. </tspan>
-<tspan x="415" y="230" class="cc">. </tspan><tspan class="key">Hobbies</tspan>.<tspan class="key">Software</tspan>:<tspan class="cc"> ........................ </tspan><tspan class="value">Video Games</tspan>
-<tspan x="415" y="240" class="cc">. </tspan><tspan class="key">Hobbies</tspan>.<tspan class="key">Hardware</tspan>:<tspan class="cc"> .............. </tspan><tspan class="value">Table Tennis, Football</tspan>
+<tspan x="415" y="190" class="cc">. </tspan><tspan class="key">Languages</tspan>.<tspan class="key">Real</tspan>:<tspan class="cc"> ......................... </tspan><tspan class="value">English, Urdu</tspan>
+<tspan x="415" y="210" class="cc">. </tspan><tspan class="key">Hobbies</tspan>.<tspan class="key">Software</tspan>:<tspan class="cc"> ......................... </tspan><tspan class="value">Video Games</tspan>
+<tspan x="415" y="230" class="cc">. </tspan><tspan class="key">Hobbies</tspan>.<tspan class="key">Hardware</tspan>:<tspan class="cc"> .............. </tspan><tspan class="value">Table Tennis, Football</tspan>
 <tspan x="415" y="270">- Contact</tspan> -——————————————————————————————————————————
 <tspan x="415" y="315" class="cc">. </tspan><tspan class="key">Email</tspan>.<tspan class="key">Personal</tspan>:<tspan class="cc"> ................. </tspan><tspan class="value">ahsanrana3x@gmail.com</tspan>
 <tspan x="415" y="335" class="cc">. </tspan><tspan class="key">Email</tspan>.<tspan class="key">Work</tspan>:<tspan class="cc"> ............... </tspan><tspan class="value">ahsan.rana@dubizzlelabs.com</tspan>
