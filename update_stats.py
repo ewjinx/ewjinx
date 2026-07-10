@@ -266,17 +266,20 @@ def svg_overwrite(filename, age_data, commit_data, star_data, repo_data, contrib
     tree = etree.parse(filename)
     root = tree.getroot()
     
-    # Lowered from 44 to 39 to pull Uptime to the left
-    justify_format(root, 'age_data', age_data, 39)
+    # Update Uptime text, bypass auto-dots, and manually inject exactly 13 dots
+    justify_format(root, 'age_data', age_data, 0)
+    find_and_replace(root, 'age_data_dots', '.............')
     
+    # Leave these dynamically calculated so they stay aligned automatically
     justify_format(root, 'commit_data', commit_data, 22)
     justify_format(root, 'star_data', star_data, 14)
     justify_format(root, 'repo_data', repo_data, 6)
     justify_format(root, 'contrib_data', contrib_data)
     justify_format(root, 'follower_data', follower_data, 10)
     
-    # Increased to 26 so the dots return for "Lines of Code"
-    justify_format(root, 'loc_data', loc_data[2], 26)
+    # Update LOC text, bypass auto-dots, and manually inject exactly 5 dots
+    justify_format(root, 'loc_data', loc_data[2], 0)
+    find_and_replace(root, 'loc_data_dots', '.....')
     
     justify_format(root, 'loc_add', loc_data[0])
     justify_format(root, 'loc_del', loc_data[1], 7)
