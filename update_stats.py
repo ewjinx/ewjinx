@@ -2,19 +2,27 @@ import os
 import urllib.request
 import json
 
-# Replace with your actual GitHub username
-USERNAME = "ewjinx"
+# double-check that this is exactly your username lowercase
+USERNAME = "ewjinx" 
 
 def fetch_github_stats():
+    # Use the built-in GitHub Action token to avoid API rate limits
+    token = os.environ.get("GITHUB_TOKEN")
+    
+    def make_request(url):
+        req = urllib.request.Request(url)
+        if token:
+            req.add_header("Authorization", f"token {token}")
+        req.add_header("User-Agent", "Python-Urllib")
+        response = urllib.request.urlopen(req)
+        return json.loads(response.read().decode())
+
     # Fetch user general data
-    user_url = f"https://api.github.com/users/{USERNAME}"
-    user_response = urllib.request.urlopen(user_url)
-    user_data = json.loads(user_response.read().decode())
+    user_data = make_request(f"https://api.github.com/users/{USERNAME}")
     
     # Fetch user repository data to calculate total star count
     repos_url = f"https://api.github.com/users/{USERNAME}/repos?per_page=100"
-    repos_response = urllib.request.urlopen(repos_url)
-    repos_data = json.loads(repos_response.read().decode())
+    repos_data = make_request(repos_url)
     
     total_stars = sum(repo["stargazers_count"] for repo in repos_data)
     
@@ -25,25 +33,20 @@ def fetch_github_stats():
     }
 
 def update_svgs(stats):
-    # Process both dark and light variations
     for mode in ["dark", "light"]:
         template_name = f"template_{mode}.svg"
         output_name = f"{mode}_mode.svg"
         
-        if os.path.exists(template_name):
-            with open(template_name, "r", encoding="utf-8") as file:
-                content = file.read()
-            
-            # Safely format strings using our placeholders
-            updated_content = content.format(**stats)
-            
-            with open(output_name, "w", encoding="utf-8") as file:
-                file.write(updated_content)
-            print(f"Successfully generated {output_name}")
+        with open(template_name, "r", encoding="utf-8") as file:
+            content = file.read()
+        
+        updated_content = content.format(**stats)
+        
+        with open(output_name, "w", encoding="utf-8") as file:
+            file.write(updated_content)
+        print(f"Successfully generated {output_name}")
 
 if __name__ == "__main__":
-    try:
-        stats = fetch_github_stats()
-        update_svgs(stats)
-    except Exception as e:
-        print(f"Error executing script: {e}")
+    # Removed the blind try/except block so GitHub can report real script errors
+    stats = fetch_github_stats()
+    update_svgs(stats)
