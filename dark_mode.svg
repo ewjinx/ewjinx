@@ -1,58 +1,65 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="460" viewBox="0 0 800 460">
-  <style>
-    .ascii { font-family: monospace; font-size: 11px; fill: #58a6ff; font-weight: bold; white-space: pre; }
-    .text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", monospace; font-size: 15px; fill: #c9d1d9; }
-    .bold { font-weight: bold; fill: #ff7b72; }
-  </style>
-  
-  <!-- Background Card -->
-  <rect width="100%" height="100%" fill="#0d1117" rx="10" stroke="#30363d" stroke-width="1"/>
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,monospace" width="1150px" height="590px" font-size="16px">
+<style>
+@font-face {
+  src: local('Consolas'), local('Consolas Bold');
+  font-family: 'ConsolasFallback';
+  font-display: swap;
+  -webkit-size-adjust: 109%;
+  size-adjust: 109%;
+}
+.key {fill: #ffa657;}
+.value {fill: #a5d6ff;}
+.addColor {fill: #3fb950;}
+.delColor {fill: #f85149;}
+.cc {fill: #616e7f;}
+text, tspan {white-space: pre;}
+</style>
+<rect width="1150px" height="590px" fill="#161b22" rx="15"/>
 
-  <!-- Your ASCII Art Portrait (Safely Escaped) -->
-  <text x="25" y="40" class="ascii">
-    <tspan x="25" dy="0">..............::::..........:.............................::</tspan>
-    <tspan x="25" dy="14">...................:^~~~~~~!Y!^~::::::......................</tspan>
-    <tspan x="25" dy="14">..............^!?JJYJJJJJJJJYY?~~!JJYYJJ7~^:................</tspan>
-    <tspan x="25" dy="14">...........~7JYJ7!~~~~~~~~~~~~~~~~~~~~!7?JJYY7~:............</tspan>
-    <tspan x="25" dy="14">.........~YY?!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!?YYJ!..........</tspan>
-    <tspan x="25" dy="14">.......:JP7~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~75Y:........</tspan>
-    <tspan x="25" dy="14">......:55~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~J5?:......</tspan>
-    <tspan x="25" dy="14">.....:PY~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!JP!.....</tspan>
-    <tspan x="25" dy="14">....:55~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^?G^....</tspan>
-    <tspan x="25" dy="14">....55~~~~~~~~~~~~!7?JJJJ?!~~~~~~~~~~~~~~~~~~!7?????!^JG:...</tspan>
-    <tspan x="25" dy="14">...JP~~~~~~~~~~!J5PJ7^:^^~5PY?77!~~~~~~~~~7JYJ?7!!!7YY7PJ...</tspan>
-    <tspan x="25" dy="14">..7G!~~~~~~~~~YB5~:.:!7!!~!!!J5JYY~~~~~!JYY!:........!PPG^..</tspan>
-    <tspan x="25" dy="14">.^B7~~~~~~~~~Y#7...!JYYJBP?JJ7~.:YP!^~J57:..^!777:....^G&amp;!..</tspan>
-    <tspan x="25" dy="14">.!G~~~~~~~~~?&amp;?..:?J?JP#&amp;#55Y7J^.:?PYGG^..^YP##G?^?~...7#!..</tspan>
-    <tspan x="25" dy="14">.JP~~~~~~~~~BG:..?#B#J?B&amp;#BJ^.:!^..~P#~..~BP7PJ^7YBB^...P!..</tspan>
-    <tspan x="25" dy="14">.JP~~~~~~~~J&amp;?..:?B&amp;&amp;&amp;##&amp;#???JP&amp;?.:.7Y..^B&amp;##&amp;BGPG##~..:G!..</tspan>
-    <tspan x="25" dy="14">.J5~~~~~~~~7#!..:P#&amp;&amp;##G#&amp;&amp;&amp;####7.::YJ..J&amp;&amp;&amp;#&amp;&amp;&amp;&amp;&amp;&amp;#^..:G!..</tspan>
-    <tspan x="25" dy="14">.?G~~~~~~~~~G7...7B#&amp;BBP#BBB#&amp;G!...7&amp;5..!##&amp;&amp;&amp;&amp;&amp;&amp;&amp;B7::^YG^..</tspan>
-    <tspan x="25" dy="14">.^B7~~~~~~~~7P!::.:JB&amp;&amp;&amp;#BBBG?:..:?GPG7..^J###BG5J~:^!J#~...</tspan>
-    <tspan x="25" dy="14">..?G!~~~~~~~~75Y7^::^7JJJ?!^:.:~?5Y!^7PY^.:^^^^::^^~~~5Y....</tspan>
-    <tspan x="25" dy="14">...!5Y!~~~~~~~~!7~^^^^^^^^~7?JYJ?!~~~~~?YYJ7!~^^^^^^^JG^....</tspan>
-    <tspan x="25" dy="14">....:75Y7!~~~~~~~^^^^~^^^^~777~~~~~~~~~~~!77!~^^^^^^JP^.....</tspan>
-    <tspan x="25" dy="14">......:~?5Y?!~~~~~^^^^^^^^~~~~~~~~~~~~~~~~~~~~^^^^^~7^......</tspan>
-    <tspan x="25" dy="14">.........:~7JYJ?!~^^^^^^^^~~~~~~~~~~~~~~~~~~~~~^^^^:.......:</tspan>
-    <tspan x="25" dy="14">.............:!?J^^~^^^^^^~~~~~~~~~~~~~~~~~!JY!^::.........:</tspan>
-    <tspan x="25" dy="14">.................:::^^^^^^7?7!!!!777?J?JJYYY7:.............:</tspan>
-    <tspan x="25" dy="14">.......................:::~7?J?JJ?777!~~^^:.................</tspan>
-  </text>
+<text x="15" y="30" fill="#c9d1d9">
+<tspan x="15" y="30">..............::::..........:.............................::</tspan>
+<tspan x="15" y="50">...................:^~~~~~~!Y!^~::::::......................</tspan>
+<tspan x="15" y="70">..............^!?JJYJJJJJJJJYY?~~!JJYYJJ7~^:................</tspan>
+<tspan x="15" y="90">...........~7JYJ7!~~~~~~~~~~~~~~~~~~~~!7?JJYY7~:............</tspan>
+<tspan x="15" y="110">.........~YY?!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!?YYJ!..........</tspan>
+<tspan x="15" y="130">.......:JP7~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~75Y:........</tspan>
+<tspan x="15" y="150">......:55~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~J5?:......</tspan>
+<tspan x="15" y="170">.....:PY~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!JP!.....</tspan>
+<tspan x="15" y="190">....:55~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^?G^....</tspan>
+<tspan x="15" y="210">....55~~~~~~~~~~~~!7?JJJJ?!~~~~~~~~~~~~~~~~~~!7?????!^JG:...</tspan>
+<tspan x="15" y="230">...JP~~~~~~~~~~!J5PJ7^:^^~5PY?77!~~~~~~~~~7JYJ?7!!!7YY7PJ...</tspan>
+<tspan x="15" y="250">..7G!~~~~~~~~~YB5~:.:!7!!~!!!J5JYY~~~~~!JYY!:........!PPG^..</tspan>
+<tspan x="15" y="270">.^B7~~~~~~~~~Y#7...!JYYJBP?JJ7~.:YP!^~J57:..^!777:....^G&amp;!..</tspan>
+<tspan x="15" y="290">.!G~~~~~~~~~?&amp;?..:?J?JP#&amp;#55Y7J^.:?PYGG^..^YP##G?^?~...7#!..</tspan>
+<tspan x="15" y="310">.JP~~~~~~~~~BG:..?#B#J?B&amp;#BJ^.:!^..~P#~..~BP7PJ^7YBB^...P!..</tspan>
+<tspan x="15" y="330">.JP~~~~~~~~J&amp;?..:?B&amp;&amp;&amp;##&amp;#???JP&amp;?.:.7Y..^B&amp;##&amp;BGPG##~..:G!..</tspan>
+<tspan x="15" y="350">.J5~~~~~~~~7#!..:P#&amp;&amp;##G#&amp;&amp;&amp;####7.::YJ..J&amp;&amp;&amp;#&amp;&amp;&amp;&amp;&amp;&amp;#^..:G!..</tspan>
+<tspan x="15" y="370">.?G~~~~~~~~~G7...7B#&amp;BBP#BBB#&amp;G!...7&amp;5..!##&amp;&amp;&amp;&amp;&amp;&amp;&amp;B7::^YG^..</tspan>
+<tspan x="15" y="390">.^B7~~~~~~~~7P!::.:JB&amp;&amp;&amp;#BBBG?:..:?GPG7..^J###BG5J~:^!J#~...</tspan>
+<tspan x="15" y="410">..?G!~~~~~~~~75Y7^::^7JJJ?!^:.:~?5Y!^7PY^.:^^^^::^^~~~5Y....</tspan>
+<tspan x="15" y="430">...!5Y!~~~~~~~~!7~^^^^^^^^~7?JYJ?!~~~~~?YYJ7!~^^^^^^^JG^....</tspan>
+<tspan x="15" y="450">....:75Y7!~~~~~~~^^^^~^^^^~777~~~~~~~~~~~!77!~^^^^^^JP^.....</tspan>
+<tspan x="15" y="470">......:~?5Y?!~~~~~^^^^^^^^~~~~~~~~~~~~~~~~~~~~^^^^^~7^......</tspan>
+<tspan x="15" y="490">.........:~7JYJ?!~^^^^^^^^~~~~~~~~~~~~~~~~~~~~~^^^^:.......:</tspan>
+<tspan x="15" y="510">.............:!?J^^~^^^^^^~~~~~~~~~~~~~~~~~!JY!^::.........:</tspan>
+<tspan x="15" y="530">.................:::^^^^^^7?7!!!!777?J?JJYYY7:.............:</tspan>
+<tspan x="15" y="550">.......................:::~7?J?JJ?777!~~^^:.................</tspan>
+</text>
 
-  <!-- System Info / Stats (Aligned to the right side of the art) -->
-  <text x="460" y="80" class="text">
-    <tspan class="bold">user@github</tspan>:~# neofetch --stats
-  </text>
-  <text x="460" y="125" class="text">
-    <tspan class="bold">OS:</tspan> GitHub Profile OS v2026
-  </text>
-  <text x="460" y="165" class="text">
-    <tspan class="bold">Repositories:</tspan> 15
-  </text>
-  <text x="460" y="205" class="text">
-    <tspan class="bold">Total Stars:</tspan> 3
-  </text>
-  <text x="460" y="245" class="text">
-    <tspan class="bold">Followers:</tspan> 1
-  </text>
+<text x="610" y="30" fill="#c9d1d9">
+<tspan x="610" y="30">ewjinx@github</tspan> -———————————————————————————————————————————-—-
+<tspan x="610" y="50" class="cc">. </tspan><tspan class="key">OS</tspan>:<tspan class="cc"> ........................ </tspan><tspan class="value">macOS, Ubuntu, Windows 11</tspan>
+<tspan x="610" y="70" class="cc">. </tspan><tspan class="key">Host</tspan>:<tspan class="cc"> ............................. </tspan><tspan class="value">Custom PC, MacBook Pro</tspan>
+<tspan x="610" y="90" class="cc">. </tspan><tspan class="key">IDE</tspan>:<tspan class="cc"> ........................ </tspan><tspan class="value">Xcode, VS Code, Cursor</tspan>
+<tspan x="610" y="110" class="cc">. </tspan>
+<tspan x="610" y="130" class="cc">. </tspan><tspan class="key">Languages</tspan>.<tspan class="key">Programming</tspan>:<tspan class="cc"> ..... </tspan><tspan class="value">Swift, SwiftUI, Python, TypeScript</tspan>
+<tspan x="610" y="150" class="cc">. </tspan><tspan class="key">Languages</tspan>.<tspan class="key">Computer</tspan>:<tspan class="cc"> ......... </tspan><tspan class="value">HTML, CSS, JSON, Markdown, YAML</tspan>
+<tspan x="610" y="170" class="cc">. </tspan>
+<tspan x="610" y="190" class="cc">. </tspan><tspan class="key">Hobbies</tspan>.<tspan class="key">Software</tspan>:<tspan class="cc"> .... </tspan><tspan class="value">iOS App Architecture, Open Source</tspan>
+<tspan x="610" y="210" class="cc">. </tspan><tspan class="key">Hobbies</tspan>.<tspan class="key">Hardware</tspan>:<tspan class="cc"> ............. </tspan><tspan class="value">PC Hardware Mods, Undervolting</tspan>
+<tspan x="610" y="250">- GitHub Stats</tspan> -—————————————————————————————————————————-—-
+<tspan x="610" y="280" class="cc">. </tspan><tspan class="key">Repos</tspan>:<tspan class="cc">{repo_dots}</tspan><tspan class="value">{public_repos}</tspan> | <tspan class="key">Stars</tspan>:<tspan class="cc">{star_dots}</tspan><tspan class="value">{stars}</tspan>
+<tspan x="610" y="310" class="cc">. </tspan><tspan class="key">Followers</tspan>:<tspan class="cc">{follower_dots}</tspan><tspan class="value">{followers}</tspan>
+</text>
 </svg>
