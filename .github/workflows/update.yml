@@ -28,7 +28,7 @@ jobs:
 
       - name: Update README file
         env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          ACCESS_TOKEN: ${{ github.token }}
           USER_NAME: ewjinx
         run: python update_stats.py
 
